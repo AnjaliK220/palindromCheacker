@@ -1,4 +1,4 @@
-# 🔄 Java Development Internship - Task 1: Palindrome Checker
+# 🔄 Java Development Internship - Task : Palindrome Checker
 
 Welcome to my Java internship project repository! This repository contains two different implementations of a **Palindrome Checker** application to demonstrate both **Command-Line Interface (CLI)** logic and **Graphical User Interface (GUI)** application design.
 
