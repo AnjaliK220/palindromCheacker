@@ -1,47 +1,43 @@
-#  Palindrome Checker (Console + GUI)
+# 🧮 Java Development Internship - Task 1
 
-A versatile and highly robust Java application developed as part of the Java Development Internship. This project features a unique **Hybrid Dual-Architecture** that combines a continuous command-line framework and a Graphical User Interface (GUI) into a single unified application.
-
----
-
-## 🚀 Key Architectural Features
-
-* **Dual Boot-Up Choice:** Upon execution, the system dynamically prompts the user in the terminal to select their preferred operational mode (Console or GUI).
-* **Intelligent Data Cleaning:** Automatically strips out spaces, punctuation marks, commas, and special symbols using Regex (`[^a-zA-Z0-9]`) before verification.
-* **Case-Insensitive Normalization:** Converts all input streams to lowercase to ensure absolute accuracy regardless of mixed capitalization.
-* **Continuous Console Interface (Mode 1):** Implements an infinite `while(true)` control loop allowing users to test infinite words sequentially without restarts until entering the termination phrase.
-* **Premium Swing GUI Canvas (Mode 2):** Launches a sleek, modern dark-themed interactive window utilizing layout coordinates, responsive inputs, and dynamic color-coded feedback alerts.
+Welcome to my Java internship project repository! This repository contains two different implementations of the Calculator task to demonstrate both **Command-Line Interface (CLI)** logic and **Graphical User Interface (GUI)** application design.
 
 ---
 
-## 🛠️ Tech Stack & Methods Used
+## 📁 Repository Structure & Projects
 
-* **Language:** Java (JDK 8+)
-* **GUI Framework:** Java Swing (`javax.swing.*`) & Abstract Window Toolkit (`java.awt.*`)
-* **Core Mechanics:**
-  * `Scanner(System.in)` - Synchronous stream choice and data parsing.
-  * `StringBuilder.reverse()` - Efficient in-place string flipping.
-  * `String.replaceAll()` - Regex filtering engine for punctuation stripping.
-  * `ActionListener` - Event capture hooks for UI touch actions.
+This repository contains two main Java files:
 
----
+1. **Console / Terminal Mode (`SimpleCalculator.java`)**
+   - A standard text-based program that runs entirely inside the terminal.
+   - Takes input using the `Scanner` class and displays output instantly on the console.
 
-## 🕹️ Project Modules Explained
-
-### 1. Mode 1: Continuous Loop Console Mode
-Runs natively inside your code terminal. It continuously listens for input strings without resetting.
-* **Exit Trigger:** Simply type `exit` to break the active loop thread safely.
-
-### 2. Mode 2: Graphical User Interface (GUI) Mode
-Spawns a standalone desktop canvas window anchored perfectly in the screen center.
-* **Green State:** Triggers a success message if the string is structurally a palindrome.
-* **Red State:** Triggers an error message if the reverse sequence fails to match.
-* **Yellow State:** Dynamically checks for null or blank whitespace entries.
+2. **Desktop App / GUI Mode (`GuiCalculator.java`)**
+   - An interactive desktop application window built using **Java Swing**.
+   - Features clickable buttons, a layout grid, and a beautiful visual display screen.
 
 ---
 
-## 📝 Verification Examples Handled
+## ✨ Features Implemented
 
-* `"Madam"` ➡️ **Valid Palindrome** (Case-normalisation handles uppercase 'M')
-* `"nayan nayan"` ➡️ **Valid Palindrome** (Space filtering keeps string uniform)
-* `"A man, a plan, a canal: Panama"` ➡️ **Valid Palindrome** (Filters out commas and colons flawlessly)
+- **Core Operations:** Supports Addition (`+`), Subtraction (`-`), Multiplication (`*`), and Division (`/`).
+- **Input Handling:** Interactive button clicks for GUI mode and seamless keyboard inputs for Console mode.
+- **Robust Logic:** Added conditional checks to handle edge cases like preventing application crashes when dividing a number by zero.
+
+---
+
+## 🛠️ Technologies Used
+
+- **Language:** Java (JDK 8 or higher)
+- **Frameworks:** Java Swing & AWT (for GUI Application)
+- **Development Tool:** Visual Studio Code (VS Code)
+
+---
+
+## 🚀 How to Run the Files
+
+### 1. Running the Console (Terminal) Version
+Open your VS Code terminal and type these commands:
+```bash
+javac SimpleCalculator.java
+java SimpleCalculator
